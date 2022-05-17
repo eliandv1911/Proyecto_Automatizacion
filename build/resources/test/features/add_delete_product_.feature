@@ -8,7 +8,10 @@ Feature: buy products on LINIO
     When the user selects the product <product>
     When the user adds products to the cart <quantity>
     When the user clicks go to cart
-    Then the user should see the product, the quantity and the value <product>  <quantity> <value>
+    Then the user should see the product, the quantity and the value <product> <quantity> <value>
+    When the user returns to the main page
+    When the user clicks on the shopping cart on the main page
+    Then the user should see the same values saved in the txt file
 
     Examples:
       | product                                                | quantity | value      |

@@ -22,7 +22,7 @@ public class AddToCart implements Task {
         actor.attemptsTo(
                 //Click.on(LinioProductoSelectedPage.DIV_SELECT_PRODUCT_QUANTITY),
                //Click.on(LinioProductoSelectedPage.OPTION_PRODUCT_QUANTITY)
-               SelectFromOptions.byValue(Integer.toString(quantityOfProduct)).from(LinioProductoSelectedPage.SELECT_PRODUCT_QUANTITY),
+               //SelectFromOptions.byValue(Integer.toString(quantityOfProduct)).from(LinioProductoSelectedPage.SELECT_PRODUCT_QUANTITY),
                 Click.on(LinioProductoSelectedPage.BUTTON_ANADIR_AL_CARRITO)
         );
     }
