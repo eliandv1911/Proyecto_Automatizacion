@@ -1,5 +1,6 @@
 package co.com.tcs.tallerautomatizacion.stepdefinitions;
 
+import co.com.tcs.tallerautomatizacion.questions.IsTheMessageToCheckItemDeleted;
 import co.com.tcs.tallerautomatizacion.questions.IsTheNameOfProductCorrect;
 import co.com.tcs.tallerautomatizacion.questions.IsTheQuantityOfProductCorrect;
 import co.com.tcs.tallerautomatizacion.questions.IsTheValueOfProductCorrect;
@@ -94,5 +95,16 @@ public class AddAndDeleteProductStepDefinitions {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(IsTheValueOfProductCorrect.isTheValueOfProductCorrect(), Matchers.equalTo(value)));
     }
 
+    @When("^the user clicks the delete section on the shopping cart page$")
+    public void theUserClicksTheDeleteSectionOnTheShoppingCartPage() {
+        OnStage.theActorInTheSpotlight().attemptsTo(DeleteProductFromShoppingCart.deleteProductFromShoppingCart());
+    }
+
+
+    @Then("^el usuario deberia ver el mensaje (.*)$")
+    public void elUsuarioDeberiaVerElMensaje(String message) {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(IsTheMessageToCheckItemDeleted.isTheMessageToCheckItemDeleted(), Matchers.equalTo(message)));
+
+    }
 
 }

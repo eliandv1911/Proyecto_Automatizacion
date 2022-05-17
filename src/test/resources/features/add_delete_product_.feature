@@ -12,10 +12,12 @@ Feature: buy products on LINIO
     When the user returns to the main page
     When the user clicks on the shopping cart on the main page
     Then the user should see the same values saved in the txt file
+    When the user clicks the delete section on the shopping cart page
+    Then el usuario deberia ver el mensaje <message>
 
     Examples:
-      | product                                                | quantity | value      |
-      | Super Mega Combo Azul Queen 160x190 Resortado Marshall | 3        | $1.274.900 |
+      | product                                                | quantity | value      | message                           |
+      | Super Mega Combo Azul Queen 160x190 Resortado Marshall | 3        | $1.274.900 | NO TIENES PRODUCTOS EN TU CARRITO |
 
 
 
