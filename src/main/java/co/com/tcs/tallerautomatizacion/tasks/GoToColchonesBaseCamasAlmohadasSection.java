@@ -16,8 +16,8 @@ public class GoToColchonesBaseCamasAlmohadasSection implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(MoveMouse.to(LinioHomePage.MENU_ICON),
-                //Click.on(LinioHomePage.MENU_ICON),
+        actor.attemptsTo(//MoveMouse.to(LinioHomePage.MENU_ICON),
+                Click.on(LinioHomePage.MENU_ICON),
                 MoveMouse.to(LinioHomePage.HOGAR_CATEGORY),
                 Click.on(LinioHomePage.COLCHONES_BASE_CAMAS_ALMOHADAS_SECTION)
 

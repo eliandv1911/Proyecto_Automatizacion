@@ -57,11 +57,10 @@ public class AddAndDeleteProductStepDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(GoToCart.goToCart());
     }
 
-    @Then("^the user should see the product, the quantity and the value (.*) (.*) (.*)$")
-    public void theUserShouldSeeTheProductTheQuantityAndTheValue(String product, String quantity, String value) {
+    @Then("^the user should see the product and the quantity (.*) (.*)$")
+    public void theUserShouldSeeTheProductAndTheQuantity(String product, String quantity) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(IsTheNameOfProductCorrect.isTheNameOfProductCorrect(), Matchers.equalTo(product)));
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(IsTheQuantityOfProductCorrect.isTheQuantityOfProductCorrect(), Matchers.equalTo(quantity)));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(IsTheValueOfProductCorrect.isTheValueOfProductCorrect(), Matchers.equalTo(value)));
 
     }
 

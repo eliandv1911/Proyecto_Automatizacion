@@ -8,7 +8,7 @@ Feature: buy products on LINIO
     When the user selects the product <product>
     When the user adds products to the cart <quantity>
     When the user clicks go to cart
-    Then the user should see the product, the quantity and the value <product> <quantity> <value>
+    Then the user should see the product and the quantity <product> <quantity>
     When the user returns to the main page
     When the user clicks on the shopping cart on the main page
     Then the user should see the same values saved in the txt file
@@ -16,8 +16,8 @@ Feature: buy products on LINIO
     Then el usuario deberia ver el mensaje <message>
 
     Examples:
-      | product                                                | quantity | value      | message                           |
-      | Super Mega Combo Azul Queen 160x190 Resortado Marshall | 3        | $1.274.900 | NO TIENES PRODUCTOS EN TU CARRITO |
+      | product                                                | quantity | message                           |
+      | Super Mega Combo Azul Queen 160x190 Resortado Marshall | 3        | NO TIENES PRODUCTOS EN TU CARRITO |
 
 
 
