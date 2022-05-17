@@ -1,0 +1,16 @@
+package co.com.tcs.tallerautomatizacion.questions;
+
+import co.com.tcs.tallerautomatizacion.userinterfaces.LinioShoppingCartPage;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+
+public class IsTheValueOfProductCorrect implements Question<String> {
+    @Override
+    public String answeredBy(Actor actor) {
+        return LinioShoppingCartPage.VALUE_OF_PRODUCT.resolveAllFor(actor).get(0).getText();// se tomael elemento.el actor resuelve el elemento. en la posicion 0.obtiene el texto
+    }
+
+    public static IsTheValueOfProductCorrect isTheValueOfProductCorrect(){
+        return new IsTheValueOfProductCorrect();
+    }
+}

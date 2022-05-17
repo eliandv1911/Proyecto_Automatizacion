@@ -2,9 +2,66 @@
 <testsuite name="co.com.tcs.tallerautomatizacion.runners.AddAndDeleteProduct" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-CUAOJU1" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-6 Steps (?[32m6 passed?[0m)
-0m0,956s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/add_delete_product_.feature:15 ?[0m# Add and remove products from the shopping cart in LINIO
+
+1 Scenarios (?[31m1 failed?[0m)
+6 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m3 passed?[0m)
+0m15,114s
+
+org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CUAOJU1', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_322'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\edelm\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f225b04553c62633030e3a31d40187b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:311)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:187)
+	at net.serenitybdd.core.pages.DropdownSelector.byValue(DropdownSelector.java:34)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.selectByValue(WebElementFacadeImpl.java:925)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget.performAs(SelectByValueFromTarget.java:19)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget$$EnhancerByCGLIB$$7d515109.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget$$EnhancerByCGLIB$$7d515109$$FastClassByCGLIB$$df81d005.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget$$EnhancerByCGLIB$$7d515109.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
+	at co.com.tcs.tallerautomatizacion.tasks.AddToCart.performAs(AddToCart.java:22)
+	at co.com.tcs.tallerautomatizacion.tasks.AddToCart$$EnhancerByCGLIB$$15254a5b.CGLIB$performAs$0(<generated>)
+	at co.com.tcs.tallerautomatizacion.tasks.AddToCart$$EnhancerByCGLIB$$15254a5b$$FastClassByCGLIB$$756ee4e2.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at co.com.tcs.tallerautomatizacion.tasks.AddToCart$$EnhancerByCGLIB$$15254a5b.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
+	at co.com.tcs.tallerautomatizacion.stepdefinitions.AddAndDeleteProductStepDefinitions.theUserAddsProductsToTheCart(AddAndDeleteProductStepDefinitions.java:43)
+	at ?.the user adds products to the cart 3(src/test/resources/features/add_delete_product_.feature:9)
 
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
