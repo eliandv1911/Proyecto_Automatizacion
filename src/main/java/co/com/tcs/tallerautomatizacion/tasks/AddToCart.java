@@ -9,7 +9,7 @@ import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.actions.selectactions.SelectByValueFromTarget;
 import org.openqa.selenium.Keys;
 
-public class AddToCart implements Task {
+public class AddToCart implements Task{
 
     int quantityOfProduct;
 
@@ -20,9 +20,8 @@ public class AddToCart implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                //Click.on(LinioProductoSelectedPage.DIV_SELECT_PRODUCT_QUANTITY),
-               //Click.on(LinioProductoSelectedPage.OPTION_PRODUCT_QUANTITY)
-               //SelectFromOptions.byValue(Integer.toString(quantityOfProduct)).from(LinioProductoSelectedPage.SELECT_PRODUCT_QUANTITY),
+                Click.on(LinioProductoSelectedPage.BUTTON_SELECT_PRODUCT_QUANTITY),
+                Click.on(LinioProductoSelectedPage.LIST_SELECT_PRODUCT_QUANTITY),
                 Click.on(LinioProductoSelectedPage.BUTTON_ANADIR_AL_CARRITO)
         );
     }

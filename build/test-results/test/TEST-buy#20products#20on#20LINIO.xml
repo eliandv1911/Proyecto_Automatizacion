@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="buy products on LINIO" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-17T07:32:11" hostname="DESKTOP-CUAOJU1" time="27.152">
+<testsuite name="buy products on LINIO" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-17T08:58:59" hostname="DESKTOP-CUAOJU1" time="31.564">
   <properties/>
-  <testcase name="Add and remove products from the shopping cart in LINIO" classname="buy products on LINIO" time="27.152"/>
+  <testcase name="Add and remove products from the shopping cart in LINIO" classname="buy products on LINIO" time="31.564"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[may 17, 2022 2:32:12 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[may 17, 2022 3:59:00 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 19269
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 40490
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may 17, 2022 2:32:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+may 17, 2022 3:59:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
